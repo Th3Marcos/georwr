@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Georeferenciamento de Ímoveis</title>
+    <title>Georreferenciamento de Imóveis</title>
     <style>
         body {
             background-image: url('img/fundo.JPG');
+            background-size: cover;
+            background-position: center;
             margin: 0;
             height: 100vh;
             font-family: Verdana;
@@ -15,54 +17,41 @@
             text-align: center;
         }
 
-        .sobre {
-            background-color: #007b5aa1;
-            text-align: center;
-            width: 100%;
-        }
-
-        .servicos {
-            background-color: #007b5aa1;
-            text-align: center;
-        }
-
-        .contato {
-            background-color: #007b5aa1;
-            text-align: center;
-        }
-
         header {
             padding: 40px 20px;
             background-image: url('img/fundo.JPG');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
         }
 
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            width: 200px;
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 20px;
+            border: 2px solid #f0f0f0;
+            box-shadow: 0 0 15px #8bc53f;
+            animation: brilho 2s infinite alternate;
+        }
 
         .box-title {
             background-color: #f0f0f0;
             padding: 20px;
             width: 100%;
             border-radius: 10px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .logo {
-            width: 200px;
-            text-align: center;
-            margin-bottom: 10px;
-            border-radius: 20px 20px 20px 20px;
-            border: 2px solid #f0f0f0;
-            box-shadow: 0 0 15px #8bc53f;
-            animation: brilho 2s infinite alternate;
-        }
-
-        h1 {
             color: #005740;
             font-size: 2.5em;
             font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
         }
 
         p {
@@ -73,6 +62,15 @@
             margin-bottom: 40px;
         }
 
+        .sobre,
+        .servicos,
+        .contato {
+            background-color: #007b5aa1;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
 
         h2 {
             color: #ffffff;
@@ -86,7 +84,7 @@
         }
 
         ul li::before {
-            content: "🌎";
+            content: "🌎 ";
             color: white;
         }
 
@@ -97,14 +95,12 @@
             font-size: 0.9em;
             color: #aaa;
             width: 100%;
-
         }
 
         a {
             color: #f0f0f0;
             text-decoration: none;
             font-weight: bold;
-
         }
 
         a:hover {
@@ -130,6 +126,7 @@
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s ease;
+            margin-top: 10px;
         }
 
         .botao2 {
@@ -141,6 +138,7 @@
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s ease;
+            margin-top: 10px;
         }
 
         .botao:hover {
@@ -151,53 +149,44 @@
 
 <body>
     <header>
-        <img src="img/880456F2-EFAF-44FD-92B4-5C87EB8625EA.jpeg" alt="GeoWR" class="logo" />
-        <h1 class="box-title">Georeferenciamento de Ímoveis</h1>
+        <img src="img/880456F2-EFAF-44FD-92B4-5C87EB8625EA.jpeg" alt="Logo GeoWR" class="logo" />
+        <h1 class="box-title">Georreferenciamento de Imóveis</h1>
         <p>Engenheiro <a href="https://www.instagram.com/oliveirawemersonr/">Wemerson Oliveira</a></p>
     </header>
 
     <main>
         <div class="container">
-        <section class="sobre">
-            <h2>Sobre nós</h2>
-            <p>
-                Na GeoWR, transformamos suas ideias em projetos detalhados e eficientes. Do levantamento topográfico à
-                elaboração de projetos técnicos, estamos prontos para ajudar seu empreendimento a sair do papel
-                com <em>Qualidade</em> e <em>Precisão</em>
+            <section class="sobre">
+                <h2>Sobre nós</h2>
+                <p>
+                    Na GeoWR, transformamos suas ideias em projetos detalhados e eficientes. Do levantamento topográfico à
+                    elaboração de projetos técnicos, estamos prontos para ajudar seu empreendimento a sair do papel com
+                    <em>qualidade</em> e <em>precisão</em>.
+                </p>
+            </section>
 
+            <section class="servicos">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Georreferenciamento de imóveis;</li>
+                    <li>Projeto para loteamento e chacreamento;</li>
+                    <li>Desmembramento e unificação de área;</li>
+                    <li>Levantamento para usucapião;</li>
+                    <li>Levantamento planialtimétrico;</li>
+                    <li>Locação de obra;</li>
+                    <li>Retificação de área.</li>
+                </ul>
+            </section>
 
-            </p>
-
-
-
-
-        </section>
-
-        <section class="servicos">
-            <h2>Serviços</h2>
-            <ul>
-                <li>Georeferenciamento de imóveis;</li>
-                <li>Projeto para loteamento e chacreamento;</li>
-                <li>Desmenbramento e unificação de área;</li>
-                <li>Levantamento para Usucapião;</li>
-                <li>Levantamento planialtimétrico;</li>
-                <li>Locação de obra;</li>
-                <li>Retificação de área.</li>
-
-            </ul>
-        </section>
-
-        <section class="contato">
-            <h2>Contato</h2>
-            <p>📲Telefone:<br>
-                
-                <a href="https://wa.me/5531999817540" target="_blank" class="botao">Whatsapp: (31) 9 9981-7540</a>
-            </p>
-            <p>📷Instagram:<br>
-                
-                <a href="https://www.instagram.com/geowr_rwemerson/" class="botao2">@GeoWR</a>
-            </p>
-        </section>
+            <section class="contato">
+                <h2>Contato</h2>
+                <p>📲 Telefone:<br>
+                    <a href="https://wa.me/5531999817540" target="_blank" class="botao">Whatsapp: (31) 9 9981-7540</a>
+                </p>
+                <p>📷 Instagram:<br>
+                    <a href="https://www.instagram.com/geowr_rwemerson/" class="botao2">@GeoWR</a>
+                </p>
+            </section>
         </div>
     </main>
 
