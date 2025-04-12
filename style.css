@@ -142,9 +142,9 @@
  .botao:hover {
      background-color: #1ebe5d;
  }
-@media screen and (max-widht: 768px){
-.produto-container {
-width: 100%;
-flex-direction: colum;
-}
-}
+  @media screen and (max-widht: 768px){
+ .container {
+       width: 100%;
+       flex-direction: colum;
+       }
+ }
