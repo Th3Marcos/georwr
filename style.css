@@ -32,7 +32,7 @@
 
  .box-title {
      background-color: #f0f0f0;
-     padding: 20px;
+     padding: 10px;
      width: fit-content;
      border-radius: 10px;
      color: #00796b;
@@ -52,8 +52,7 @@
  .sobre,
  .container,
  .servicos,
- .contato,
- .nome1 {
+ .contato {
      background-color: #f3f3f3a1;
      text-align: center;
      padding: 40px 20px;
